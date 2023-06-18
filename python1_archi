@@ -1,0 +1,34 @@
+ Q1)
+n=int(input("Enter number"))
+count =0
+while(n>0):
+    n//=10
+    count=count+1
+print("Number of digits",str(count))
+
+
+Q2)
+n=input("Enter number")
+if n.isalpha():
+    print("It cannot be executed")
+elif n.isdigit():
+    fact=1
+    temp=int(n)
+    while(temp>0):
+        fact=fact*temp
+        temp=temp-1
+    print("The factorial",fact)
+
+
+
+Q3)
+Computers={
+    "laptop1":{"brand":"Dell","OS":"Windows"},
+    "laptop2":{"brand":"HP","OS":"linux"},
+    "laptop3":{"brand":"Apple","OS":"Mac-OS"}
+}
+
+for i in Computers:
+    print(Computers[i]["brand"])
+for j in Computers:
+    print(Computers[j]["OS"])
